@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>Controle web Pibot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="../static/css/bootstrap.css">
+	<link rel="stylesheet" href="../static/css/estilo.css">
+</head>
+
+<body class="jumbotron">
+
+	<div class="page-header text-center">
+	  <img src="../static/img/nasa_logo.png">
+	  <h1>NASA SPACE CONTROL</h1>
+	</div>
+	
+	<div>
+		<h4>Escreva o IP da rede (não funcional ainda)</h4>
+		<input class="ip" type="number">
+	</div>
+
+	<div class="container">
+		<iframe scrolling=no marginwidth=0 marginheight=0 frameborder=0 height=439 width=553 src="http://192.168.253.84/camerastream/min.php"></iframe>
+	</div>
+
+	<div class="container">
+		<button  value="w" id="w">
+  			<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+		</button>
+		
+		<button  value="a" id="a">
+			<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+		</button>
+
+		<button  value="d" id="d">
+			<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+		</button>
+
+		<button  value="s" id="s">
+			<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+		</button>
+	
+		<button  value="x" id="x">
+			<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+		</button>	
+	</div>
+
+	<script  src="../static/js/jquery-3.1.1.min.js"></script>
+	<script  src="../static/js/main.js"></script>
+	
+
+</body>
+</html>
