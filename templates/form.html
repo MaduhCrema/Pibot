@@ -6,49 +6,36 @@
     <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../static/css/bootstrap.css">
 	<link rel="stylesheet" href="../static/css/estilo.css">
+	<script src="../static/js/jquery-3.6.4.min.js"></script> 
+	<script  src="../static/js/main.js"></script>
 </head>
 
-<body class="jumbotron">
-
-	<div class="page-header text-center">
-	  <img src="../static/img/nasa_logo.png">
-	  <h1>NASA SPACE CONTROL</h1>
+<body class="jumbotron" style="overflow: hidden; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+backgroung-color:#e3e6f2;font-size: xx-large;">
+	
+	<div class="page-header">
+	  <img src="../static/img/robot.png">
+	  <h1>EPAMINONDAS CONTROL</h1>
 	</div>
 	
-	<div>
-		<h4>Escreva o IP da rede (não funcional ainda)</h4>
-		<input class="ip" type="number">
-	</div>
-
+	<form method = "post" style="text-align: center; color:black;">
+		<p class="cont-coord">	
+			X: <span id="x_coordinate"> </span>
+			Y: <span id="y_coordinate"> </span>
+			Angle: <input id="angulo" name="angulo" type="hidden"><span  id='angle'></span> </span></input>
+		</p>
+		<div class="cont-speed">
+			<label class="text-slider" for="speed"> Speed - 1 to 5</label>
+			<input type="range" id="speed" name="speed" class="slider"
+				min="1" max="5" value="0" oninput="document.getElementById('txtspeed').innerHTML = this.value">
+				<label id="txtspeed" class="text-slider" for="speed"></label>
+		</div>
+	 </form>
 	<div class="container">
-		<iframe scrolling=no marginwidth=0 marginheight=0 frameborder=0 height=439 width=553 src="http://192.168.253.84/camerastream/min.php"></iframe>
-	</div>
-
-	<div class="container">
-		<button  value="w" id="w">
-  			<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
-		</button>
-		
-		<button  value="a" id="a">
-			<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-		</button>
-
-		<button  value="d" id="d">
-			<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-		</button>
-
-		<button  value="s" id="s">
-			<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-		</button>
+		<iframe class="frame" scrolling=no marginwidth=0 marginheight=0 frameborder=0 src="http://192.168.3.1/camerastream/min.php" style="float:left"></iframe>
+		<canvas class="canvas" id="canvas"></canvas>	
 	
-		<button  value="x" id="x">
-			<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
-		</button>	
 	</div>
-
-	<script  src="../static/js/jquery-3.1.1.min.js"></script>
-	<script  src="../static/js/main.js"></script>
-	
 
 </body>
 </html>
