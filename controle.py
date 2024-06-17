@@ -1,6 +1,6 @@
-# Implementação da movimentação do robot em Python
+#Implementação da movimentação do robot em Python
 
-# importa as bibliotecas necessárias
+#importa as bibliotecas necessárias
 import RPi.GPIO as GPIO
 import time
 import getch 
