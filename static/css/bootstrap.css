@@ -1587,19 +1587,168 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 767px) {
+  
+  .canvas{
+    margin-top: 20px;
+    margin-left:0%;
+  }
+  
+  .page-header{
+    margin-left:-20px;
+  }
+  
+  .frame{
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 439px;
+    width: 553px;
+  }
+  
+  .cont-coord{
+    margin-top: 0px;
+    margin-left: -250px;
+  }
+  
+  .cont-speed{
+    text-align: center;
+    margin-top: -85px;
+    margin-left: 200px;
+  }
+  
+  img{
+    width:300px;
+    height: 300px;
+    margin-top: -100px;
+  }
+  
+  h1{
+    color: black;
+    font-weight:bolder;
+    margin-top: -50px;
+  }
+}
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
+  
+  .canvas{
+    margin-top: 200px;
+    margin-left: -20%;
+  }
+  
+  .page-header{
+    margin-left:-20px;
+  }
+  
+  .frame{
+    margin-top: 0px;
+    margin-left: -10%;
+    height: 500px;
+    width: 120%;
+  }
+  
+  .cont-coord{
+    margin-top: 0px;
+    margin-left: -250px;
+  }
+  
+  .cont-speed{
+    text-align: center;
+    margin-top: -85px;
+    margin-left: 200px;
+  }
+  
+  img{
+    width:200px;
+    height: 300px;
+    margin-top: -0px;
+  }
+  
+  h1{
+    color: black;
+    font-weight:bolder;
+    margin-top: -50px;
   }
 }
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
+@media (min-width: 991px) {
+  
+  .canvas{
+    margin-top: 200px;
+    margin-left: -150%;
+  }
+  
+  .page-header{
+    margin-left:-20px;
+  }
+  
+  .frame{
+    margin-top: 0px;
+    margin-left: -10%;
+    height: 100%;
+    width: 130%;
+  }
+  
+  .cont-coord{
+    margin-top: 0px;
+    margin-left: -250px;
+  }
+  
+  .cont-speed{
+    text-align: center;
+    margin-top: -85px;
+    margin-left: 200px;
+  }
+  
+  img{
+    width:200px;
+    height: 200px;
+    margin-top: 0px;
+  }
+  
+  h1{
+    color: black;
+    font-weight:bolder;
+    margin-top: -50px;
   }
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+@media (min-width: 1080px) {
+  
+  .canvas{
+    margin-top: 200px;
+    margin-left: -80%;
+  }
+  
+  .page-header{
+    margin-left:-20px;
+  }
+  
+  .frame{
+    margin-top: 0px;
+    margin-left: -200px;
+    height: 100%;
+    width: 150%;
+  }
+  
+  .cont-coord{
+    margin-top: 0px;
+    margin-left: -250px;
+  }
+  
+  .cont-speed{
+    text-align: center;
+    margin-top: -85px;
+    margin-left: 200px;
+  }
+  
+  img{
+    width:250px;
+    height: 20px;
+    margin-top: -0px;
+  }
+  
+  h1{
+    color: black;
+    font-weight:bolder;
+    margin-top: -50px;
   }
 }
 .container-fluid {
