@@ -18,3 +18,19 @@ button {
 	
 }
 
+.slider
+{
+	width: 250px !important;
+}
+
+.text-slider
+{
+	font-size: x-large;
+}
+
+.page-header
+{
+	text-align: center;
+	float:inline-start;
+}
+
